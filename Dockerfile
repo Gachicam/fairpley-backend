@@ -1,5 +1,6 @@
 FROM lukemathwalker/cargo-chef:latest-rust-1.81.0-slim-bookworm AS chef
 WORKDIR /app
+# hadolint ignore=DL3008
 RUN apt-get update && apt-get install -y pkg-config libssl-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 FROM chef AS planner
