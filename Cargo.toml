@@ -43,7 +43,7 @@ tower-http = { version = "0.6.8", features = [
     "normalize-path",
 ] }
 tokio-util = { version = "0.7.17", features = ["io"] }
-tracing = "0.1.43"
+tracing = "0.1.44"
 tracing-subscriber = { version = "0.3.22", features = ["env-filter"] }
 uuid = { version = "1.18.1", features = ["v7", "fast-rng", "serde"] }
 
